@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <form onsubmit="calcBMI(); return false;">
+    <div><label for="cruntyear">Enter Crunt Year:</label></div>
+    <div><input type="number" placeholder="Enter crunt year" id="cruntyear" /></div>
+
+    <div><label for="yourbirthyear">Enter Your Birth Year:</label></div>
+     <div><input type="number" placeholder="Enter Your Birth Year" id="yourbirthyear" /></div>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function calcBMI() {
+      const cruntyearInput = document.getElementById("cruntyear");
+      const yourbirthyearInput = document.getElementById("yourbirthyear");
+      
+      const cruntyear = Number(cruntyearInput.value);
+      const yourbirthyear = Number(yourbirthyearInput.value);
+      const resultDiv = document.getElementById("result");
+
+     
+
+      const age = cruntyear - yourbirthyear ;
+      
+      
+      
+     
+      
+      
+
+      resultDiv.textContent = age;
+    }
+  </script>
+</body>
+</html>
